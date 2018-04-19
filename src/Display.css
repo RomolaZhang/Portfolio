@@ -1,91 +1,89 @@
 .work {
-  background-color: #cccccc;
   width: 96%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 15px;
-  height: 82vh;
+  margin-top: 10px;
+  height: 78vh;
   overflow-y: scroll;
 }
 
 @media (max-width: 500px) {
   .work {
-    height: 83vh;
+    height: 75vh;
     overflow-x: hidden;
   }
 }
 
 .photo2 {
   margin-top: 5vh;
-  height: 40vh;
+  height: 44vh;
   margin-left: 5vw;
-  border-radius: 5px;
   display: inline-block;
-  box-shadow: 0 5px 5px 0 hsla(0, 0%, 0%, 0.2);
+  box-shadow: 0 2px 2px 0 hsla(0, 0%, 0%, 0.2);
 }
 
 .photo {
   margin-top: 5vh;
   margin-left: 3vw;
-  height: 40vh;
-  border-radius: 5px;
+  height: 44vh;
   display: inline-block;
-  box-shadow: 0 5px 5px 0 hsla(0, 0%, 0%, 0.2);
+  box-shadow: 0 2px 2px 0 hsla(0, 0%, 0%, 0.2);
 }
 
 .about {
-  background-color: #cccccc;
-  height: 84vh;
+  height: 86vh;
   overflow-y: scroll;
 }
 
 .text {
-  margin-top: 3vh;
+  margin-top: 1vh;
   margin-left: 5vw;
   margin-bottom: 2vh;
-  background-color: rgba(150, 150, 150, 0.5);
   display: inline-block;
   padding: 2vw;
-  border-radius: 5px;
-  box-shadow: 0 5px 5px 0 hsla(0, 0%, 0%, 0.2);
 }
+
 .head {
-  font-family: Futura;
-  font-size: 32px;
-  font-style: italic;
+  font-size: 42px;
   color: black;
-  font-weight: bold;
   margin-bottom: 2vh;
+  font-family: "Simplifica";
+  font-style: italic;
+  font-weight: 600;
+  letter-spacing: 2px;
 }
 .intro {
   margin-left: 3vw;
-  font-family: Futura;
-  font-size: 19px;
-  font-style: italic;
-  margin-bottom: 1vh;
+  font-family: "Simplifica";
+  letter-spacing: 2px;
+  font-weight: 900;
+  font-size: 22px;
+  margin-bottom: 1.5vh;
   color: black;
 }
 .detail {
-  font-family: Futura;
+  font-family: "Simplifica";
   margin-left: 3vw;
-  font-size: 16px;
-  color: black;
-  margin-bottom: 0.5vh;
+  font-size: 20px;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  color: #616161;
+  margin-bottom: 0.8vh;
 }
 .smallbuttons {
-  margin-top: 10px;
+  margin-top: 15px;
   text-align: right;
 }
 .smallbutton {
   text-decoration: none;
-  font-family: Futura;
+  font-family: "Coves Bold";
   color: #555555;
   padding: 3px;
-  font-size: 14px;
+  font-size: 16px;
   margin-left: 15px;
 }
 
-@media (max-width: 970px) {
+@media (max-width: 1100px) {
   .photo {
     width: 80%;
     height: auto;
@@ -107,6 +105,14 @@
   }
 }
 @media (max-width: 500px) {
+  .about {
+    height: 75vh;
+  }
+
+  .work {
+    margin-top: 0;
+  }
+
   .head {
     font-size: 22px;
     margin-bottom: 5px;
@@ -115,6 +121,7 @@
   .intro {
     font-size: 14px;
     margin-right: 2px;
+    margin-bottom: 5px;
   }
 
   .detail {

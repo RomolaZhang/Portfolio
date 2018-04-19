@@ -27,8 +27,6 @@ import Image7 from "./assets/7_s.png";
 import Image7_1 from "./assets/7_1.png";
 import Image7_2 from "./assets/7_2.png";
 import Image7_3 from "./assets/7_3.png";
-import Image8 from "./assets/8_s.png";
-import Image8_1 from "./assets/8_1.png";
 import Image9 from "./assets/9_s.png";
 import Image9_1 from "./assets/9_1.png";
 import Image9_2 from "./assets/9_2.png";
@@ -41,6 +39,14 @@ import Image12 from "./assets/12_s.png";
 import Image12_1 from "./assets/12_1.jpeg";
 import Image12_2 from "./assets/12_2.png";
 import Image12_3 from "./assets/12_3.png";
+import Image13 from "./assets/13_s.png";
+import Image13_1 from "./assets/13_1.png";
+import Video1 from "./assets/1.mp4";
+import Video2 from "./assets/2.mp4";
+import Video3 from "./assets/3.mp4";
+import Video4 from "./assets/4.mp4";
+import Video5 from "./assets/5.mp4";
+import Video6 from "./assets/6.mp4";
 
 class App extends Component {
   constructor(props) {
@@ -61,12 +67,12 @@ class App extends Component {
           pics: [Image1_1, Image1_2, Image1_3],
           tag: "p5.js, music visualization",
           id: 1,
-          video: "https://www.youtube.com/embed/ZN8Wo3W66ls?ecver=2",
+          video: Video1,
           category: "project",
           linkword: "Link to the Exhibition",
           link: "https://shanghai.nyu.edu/news/infinite-dimensions",
           description: [
-            "This project was put on the INFINITE New Born Exhibition in 万象城.",
+            "This project was put on the INFINITE New Born Exhibition in MixCity.",
             "Poseidon is the god of the sea in ancient Greek myth. The Sound of Poseidon " +
               "brings sound and water movement together. It is a set of interactive 3D musical fountains that visualize" +
               " sound and music by changing the color, movement, and oscillation of several particle systems " +
@@ -82,7 +88,7 @@ class App extends Component {
           pics: [Image7_1, Image7_2, Image7_3],
           tag: "p5.js, visualization",
           id: 2,
-          video: "https://www.youtube.com/embed/UwINwkO1uvY?ecver=2",
+          video: Video2,
           category: "project",
           description: [
             "Inspired by one scene in Ratatouille, taste aims at visualizing the taste of food using colors and movements of particles. All effects are realized by physical simulations using p5.js. They consist of collisions, " +
@@ -99,7 +105,7 @@ class App extends Component {
           pics: [Image2_1, Image2_2, Image2_3],
           tag: "React.js, user interface",
           id: 3,
-          video: "https://www.youtube.com/embed/PkmVf-gSmHk?ecver=2",
+          video: Video3,
           category: "project",
           description: [
             "myContact is a simple mobile contact app written in React.js. It basically contains a homepage with a list of contacts and a detail page for any selected contact. The user can get access to particular contacts by searching, filtering or jumping to initials. The app offers various options to change the preview, the sorting method and the color style. The user can also add, edit and delete contact information.",
@@ -108,10 +114,10 @@ class App extends Component {
           ]
         },
         {
-          name: "the 3S",
+          name: "the Three S",
           pic: Image5,
           pics: [Image5_1, Image5_2],
-          video: "https://www.youtube.com/embed/11cRw3WFri0",
+          video: Video4,
           tag: "Unity, artgame",
           id: 4,
           category: "project",
@@ -124,7 +130,7 @@ class App extends Component {
           name: "Digital Fountain",
           pic: Image4,
           pics: [Image4_1],
-          video: "https://www.youtube.com/embed/SPqU8MgmU5M?ecver=2",
+          video: Video5,
           tag: "p5.js, 3D",
           id: 6,
           category: "project",
@@ -136,7 +142,7 @@ class App extends Component {
           name: "the Water Points",
           pic: Image6,
           pics: [Image6_1],
-          video: "https://www.youtube.com/embed/jJwJPsuHjx0?ecver=2",
+          video: Video6,
           tag: "JS, data visualization",
           id: 7,
           category: "project",
@@ -194,9 +200,18 @@ class App extends Component {
           id: 12,
           category: "design",
           description: [""]
+        },
+        {
+          name: "Promotion Board",
+          pic: Image13,
+          pics: [Image13_1],
+          tag: "PS, graphic design",
+          id: 13,
+          category: "design",
+          description: [""]
         }
       ]
-      //};
+      //  };
     };
 
     this.buttonClicked = this.buttonClicked.bind(this);
@@ -255,19 +270,15 @@ class App extends Component {
           <div className="description"> Code, design, and remix. </div>
           <div className="buttons">
             {buttons}
-            <a target="_blank" href="https://github.com/RomolaZhang/">
-              <Button
-                selected={this.state.selected === "code"}
-                label="code"
-                onClick={this.buttonClicked}
-              />
+            <a
+              target="_blank"
+              className="Button"
+              href="https://github.com/RomolaZhang/"
+            >
+              code
             </a>
-            <a target="_blank" href={Resume}>
-              <Button
-                selected={this.state.selected === "resume"}
-                label="resume"
-                onClick={this.buttonClicked}
-              />
+            <a className="Button" target="_blank" href={Resume}>
+              resume
             </a>
           </div>
           <div className="smallname"> Chuyi Zhang</div>
@@ -279,6 +290,7 @@ class App extends Component {
           selected={this.state.selected}
           works={this.state.works}
         />
+        <div className="footnote">@2018 Chuyi Zhang. All rights reserved</div>
         <WorkDetail show={this.state.show} work={work} />
       </div>
     );

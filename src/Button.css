@@ -1,7 +1,6 @@
 .Button {
   font-family: Futura;
-  /* color: #d18aa2; */
-  color: #dddddd;
+  color: #8b593f;
   margin-left: 2.5vw;
   margin-right: 3.5vw;
   margin-top: 0;
@@ -9,16 +8,30 @@
   display: inline-block;
   text-align: center;
   text-decoration: none;
+
+  font-size: 20px;
+  font-weight: bold;
+  font-variant: small-caps;
+  font-family: "Coves Bold";
 }
 
 @media (max-width: 500px) {
   .Button {
-    font-size: 16px;
+    font-size: 5vw;
+    margin-left: 3%;
+    margin-right: 3%;
   }
   .buttons {
-    width: 95%;
+    margin-top: 0;
+    width: 96%;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+@media (min-width: 1900px) {
+  .Button {
+    font-size: 28px;
   }
 }
 
@@ -30,5 +43,5 @@
   color: black;
   border-bottom-style: solid;
   border-bottom-color: black;
-  border-bottom-width: 4px;
+  border-bottom-width: 2.5px;
 }

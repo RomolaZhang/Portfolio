@@ -2,6 +2,14 @@ import React, { Component } from "react";
 import "./WorkDetail.css";
 
 class WorkDetail extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      videoURL:
+        "http://www.sample-videos.com/video/mp4/720/big_buck_bunny_720p_1mb.mp4"
+    };
+  }
   render() {
     let classes = "";
     let cate = "";
@@ -21,11 +29,10 @@ class WorkDetail extends Component {
         <div className="content">
           <div className="detailname">{this.props.work.name}</div>
           <div className="detailtag"> {this.props.work.tag}</div>
-          <iframe
-            className={"iframe " + cate}
+          <video
+            className={"Video " + cate}
+            controls
             src={this.props.work.video}
-            width="640"
-            height="360"
           />
           <div className="detaildesc"> {this.props.work.description[0]} </div>
           <a href={this.props.work.link} className="detaillink">
