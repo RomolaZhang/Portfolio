@@ -1,0 +1,34 @@
+.Button {
+  font-family: Futura;
+  /* color: #d18aa2; */
+  color: #dddddd;
+  margin-left: 2.5vw;
+  margin-right: 3.5vw;
+  margin-top: 0;
+  font-size: 18px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+}
+
+@media (max-width: 500px) {
+  .Button {
+    font-size: 16px;
+  }
+  .buttons {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.Button:hover {
+  cursor: pointer;
+}
+
+.active {
+  color: black;
+  border-bottom-style: solid;
+  border-bottom-color: black;
+  border-bottom-width: 4px;
+}

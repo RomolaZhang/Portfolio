@@ -1,0 +1,131 @@
+.work {
+  background-color: #cccccc;
+  width: 96%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  height: 82vh;
+  overflow-y: scroll;
+}
+
+@media (max-width: 500px) {
+  .work {
+    height: 83vh;
+    overflow-x: hidden;
+  }
+}
+
+.photo2 {
+  margin-top: 5vh;
+  height: 40vh;
+  margin-left: 5vw;
+  border-radius: 5px;
+  display: inline-block;
+  box-shadow: 0 5px 5px 0 hsla(0, 0%, 0%, 0.2);
+}
+
+.photo {
+  margin-top: 5vh;
+  margin-left: 3vw;
+  height: 40vh;
+  border-radius: 5px;
+  display: inline-block;
+  box-shadow: 0 5px 5px 0 hsla(0, 0%, 0%, 0.2);
+}
+
+.about {
+  background-color: #cccccc;
+  height: 84vh;
+  overflow-y: scroll;
+}
+
+.text {
+  margin-top: 3vh;
+  margin-left: 5vw;
+  margin-bottom: 2vh;
+  background-color: rgba(150, 150, 150, 0.5);
+  display: inline-block;
+  padding: 2vw;
+  border-radius: 5px;
+  box-shadow: 0 5px 5px 0 hsla(0, 0%, 0%, 0.2);
+}
+.head {
+  font-family: Futura;
+  font-size: 32px;
+  font-style: italic;
+  color: black;
+  font-weight: bold;
+  margin-bottom: 2vh;
+}
+.intro {
+  margin-left: 3vw;
+  font-family: Futura;
+  font-size: 19px;
+  font-style: italic;
+  margin-bottom: 1vh;
+  color: black;
+}
+.detail {
+  font-family: Futura;
+  margin-left: 3vw;
+  font-size: 16px;
+  color: black;
+  margin-bottom: 0.5vh;
+}
+.smallbuttons {
+  margin-top: 10px;
+  text-align: right;
+}
+.smallbutton {
+  text-decoration: none;
+  font-family: Futura;
+  color: #555555;
+  padding: 3px;
+  font-size: 14px;
+  margin-left: 15px;
+}
+
+@media (max-width: 970px) {
+  .photo {
+    width: 80%;
+    height: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .photo2 {
+    width: 80%;
+    height: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .text {
+    width: 76%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+@media (max-width: 500px) {
+  .head {
+    font-size: 22px;
+    margin-bottom: 5px;
+  }
+
+  .intro {
+    font-size: 14px;
+    margin-right: 2px;
+  }
+
+  .detail {
+    font-size: 12px;
+  }
+
+  .smallbuttons {
+    margin-top: 5px;
+  }
+
+  .smallbutton {
+    font-size: 13px;
+  }
+}
