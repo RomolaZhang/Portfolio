@@ -2,14 +2,6 @@ import React, { Component } from "react";
 import "./WorkDetail.css";
 
 class WorkDetail extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      videoURL:
-        "http://www.sample-videos.com/video/mp4/720/big_buck_bunny_720p_1mb.mp4"
-    };
-  }
   render() {
     let classes = "";
     let cate = "";
@@ -26,39 +18,44 @@ class WorkDetail extends Component {
 
     return (
       <div className={"WorkDetail" + classes}>
-        <div className="content">
-          <div className="detailname">{this.props.work.name}</div>
-          <div className="detailtag"> {this.props.work.tag}</div>
-          <video
-            className={"Video " + cate}
-            controls
-            src={this.props.work.video}
-          />
-          <div className="detaildesc"> {this.props.work.description[0]} </div>
-          <a href={this.props.work.link} className="detaillink">
-            {this.props.work.linkword}
-          </a>
-          <div className="picture">
-            <img
-              className={"detailpic " + cate}
-              src={this.props.work.pics[0]}
+        {this.props.show && (
+          <div className="content">
+            <div className="detailname">{this.props.work.name}</div>
+            <div className="detailtag"> {this.props.work.tag}</div>
+            <video
+              poster={this.props.work.pics[0]}
+              preload="auto"
+              autoPlay
+              className={"Video " + cate}
+              controls
+              src={this.props.work.video}
             />
+            <div className="detaildesc"> {this.props.work.description[0]} </div>
+            <a href={this.props.work.link} className="detaillink">
+              {this.props.work.linkword}
+            </a>
+            <div className="picture">
+              <img
+                className={"detailpic " + cate}
+                src={this.props.work.pics[0]}
+              />
+            </div>
+            <div className="detaildesc"> {this.props.work.description[1]} </div>
+            <div className="picture">
+              <img
+                className={"detailpic " + cate}
+                src={this.props.work.pics[1]}
+              />
+            </div>
+            <div className="detaildesc"> {this.props.work.description[2]} </div>
+            <div className="picture">
+              <img
+                className={"detailpic " + cate}
+                src={this.props.work.pics[2]}
+              />
+            </div>
           </div>
-          <div className="detaildesc"> {this.props.work.description[1]} </div>
-          <div className="picture">
-            <img
-              className={"detailpic " + cate}
-              src={this.props.work.pics[1]}
-            />
-          </div>
-          <div className="detaildesc"> {this.props.work.description[2]} </div>
-          <div className="picture">
-            <img
-              className={"detailpic " + cate}
-              src={this.props.work.pics[2]}
-            />
-          </div>
-        </div>
+        )}
       </div>
     );
   }
