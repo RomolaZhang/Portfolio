@@ -4,6 +4,7 @@ import Button from "./Button";
 import Display from "./Display";
 import WorkDetail from "./WorkDetail";
 import Resume from "./resume.pdf";
+import Portfolio from "./Portfolio.pdf";
 import Image1 from "./assets/1_s.png";
 import Image1_1 from "./assets/1_1.png";
 import Image1_2 from "./assets/1_2.png";
@@ -279,6 +280,9 @@ class App extends Component {
             </a>
             <a className="Button" target="_blank" href={Resume}>
               resume
+            </a>
+            <a className="Button" target="_blank" href={Portfolio}>
+              portfolio
             </a>
           </div>
           <div className="smallname"> Chuyi Zhang</div>
