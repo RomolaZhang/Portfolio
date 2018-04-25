@@ -1,8 +1,8 @@
 {
   "main.css": "static/css/main.0ed0e4b5.css",
   "main.css.map": "static/css/main.0ed0e4b5.css.map",
-  "main.js": "static/js/main.f6d895f8.js",
-  "main.js.map": "static/js/main.f6d895f8.js.map",
+  "main.js": "static/js/main.d1b8bc15.js",
+  "main.js.map": "static/js/main.d1b8bc15.js.map",
   "static/media/1.mp4": "static/media/1.243dd2d1.mp4",
   "static/media/10_1.png": "static/media/10_1.e92e9347.png",
   "static/media/10_s.png": "static/media/10_s.4189b168.png",
@@ -48,6 +48,7 @@
   "static/media/9_s.png": "static/media/9_s.bfcbe26e.png",
   "static/media/Coves Bold.otf": "static/media/Coves Bold.2673b4f6.otf",
   "static/media/Coves Light.otf": "static/media/Coves Light.62a84258.otf",
+  "static/media/Portfolio.pdf": "static/media/Portfolio.16430ac7.pdf",
   "static/media/SIMPLIFICA Typeface.ttf": "static/media/SIMPLIFICA Typeface.22dd36f6.ttf",
   "static/media/munich.otf": "static/media/munich.30d31c6e.otf",
   "static/media/photo.jpeg": "static/media/photo.d8a13873.jpeg",
