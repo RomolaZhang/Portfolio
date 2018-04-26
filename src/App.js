@@ -271,13 +271,6 @@ class App extends Component {
           <div className="description"> Code, design, and remix. </div>
           <div className="buttons">
             {buttons}
-            <a
-              target="_blank"
-              className="Button"
-              href="https://github.com/RomolaZhang/"
-            >
-              code
-            </a>
             <a className="Button" target="_blank" href={Resume}>
               resume
             </a>
